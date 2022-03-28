@@ -21,7 +21,7 @@
                     <a href="#">Команда</a>
                 </nav>
                 <!-- Без БЭМ правил написано -->
-                <button type="button" class="button header_button">Оставить заявку</button>
+                <button type="button" class="button header_button modal-button">Оставить заявку</button>
             </div>
     </div>
     </header>
@@ -47,7 +47,7 @@
                         <div class="timer__text">Секунд</div>
                     </div>
                 </div>
-                <button class="button main-display-button">Оставить заявку</button>
+                <button class="button main-display-button modal-button">Оставить заявку</button>
              </div>
             <div class="main-display-background">
                 <img src="../Glo-academy-project/images/main-screen__bgc.svg" alt="Main screen">
@@ -142,7 +142,7 @@
                 <div class="assembly__wrap block__center">
                     <h2 class="assembly-header">Закажите свою уникальную сборку</h2>
                     <div class="assembly-description">Мы свяжемся с вами, чтобы уточнить детали заказа</div>
-                    <button class="button assembly-button">Оставить заявку</button>
+                    <button class="button assembly-button modal-button">Оставить заявку</button>
                     <div class="assembly-socials">
                         <div class="assembly-item">
                             <img src="../Glo-academy-project/images/vk.svg" alt="Vkontakte">
@@ -160,6 +160,26 @@
                 </div>
             </div>
         </section>
+        <form action="#" class="modal block__center">
+            <div class="modal-inner">
+                <div class="modal-close"><img src="../Glo-academy-project/images/close.svg" alt=""></div>
+                <h3 class="modal-header">Заявка на сборку ПК</h3>
+                <div class="modal-subheader">Мы свяжемся с вами, чтобы обсудить детали заказа</div>
+                <div class="modal-elements">
+                    <div class="modal-item">
+                        <input type="text" class="modal-input" placeholder="Как вас зовут?">
+                    </div>
+                    <div class="modal-item">
+                        <input type="tel" class="modal-input" placeholder="Номер телевона">
+                    </div>
+                    <div class="modal-item">
+                        <input type="email" class="modal-input" placeholder="E-mail">
+                    </div>
+                </div>
+                <button type="submit" class="button main-display-button">Отправить</button>
+            </div>
+        </form>
     </main>
+    <script src="../Glo-academy-project/main.js"></script>
 </body>
 </html>

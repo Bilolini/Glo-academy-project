@@ -10,7 +10,13 @@
 *, *::before, *::after{
     box-sizing: border-box;
 }
+html{
+    /* overflow-y: scroll;  */
+    /* margin-left: calc(100vw - 100%);
+    margin-right: 0; */
+}
 html, body{
+    overflow: auto; 
     font-size: 62.5%;
     color: white;
     font-weight: normal;
@@ -255,12 +261,6 @@ p{
     padding-left: 11rem;
     padding-right: 11rem;
 }
-/* .command__item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
 .command__img{
     width: 19rem;
     height: 19rem;
@@ -287,12 +287,6 @@ p{
 .assembly{
     padding-bottom: 24.4rem;
 }
-/* .assembly__wrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
 .assembly-header{
     font-weight: 700;
     font-size: 4.8rem;
@@ -332,4 +326,68 @@ p{
     width: 50%;
     height: 50%;
 }
-
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 10;
+    padding: 3rem 0;
+    background: rgba(0,0,0, 0.8);
+    display: none;
+} 
+.modal-inner{
+    width: 66.3rem;
+    padding: 9rem 9.5rem 9.5rem 9rem;
+    background: #2C2C2C;
+    text-align: center;
+    position: relative;
+}
+.modal-header{
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 140%;
+    margin-bottom: 1rem;
+}
+.modal-subheader{
+    font-size: 16px;
+    line-height: 160%;
+    opacity: 0.5;
+    margin-bottom: 2.8rem;
+}
+.modal-elements{
+    margin: 0 auto 3.2rem auto;
+    width: 45.4rem;
+    
+}
+.modal-item{
+    height: 4.4rem;
+}
+.modal-input{
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255, 0.25);
+    border-radius: 5rem;
+    font-size: 1.4rem;
+    line-height: 160%;
+    padding: 1rem 3rem;
+    color: rgba(255,255,255, 0.8);
+}
+.modal-item:not(:last-child){
+    margin-bottom: 1.6rem;
+}
+.modal-close{
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+}
+.noscroll{
+    overflow: hidden;
+    height: 100%;
+}
